@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영상테스트</title>
+</head>
+<body>
+    <h2>영상테스트</h2>
+    <video width="500" height="375"  preload="auto" poster="img/poster.jpg" autoplay muted loop>
+        <!-- muted를 해야 자동플레이가 된다. -->
+        <!--autoplay controls loop muted poster="aaa" preload="bbb"controlslist="nodownload" -->
+        <!-- preload="auto"  페이지를 열 떄 무엇을 로드할지: 동여상과 메타데이타 모드 로드 -->
+        <source src="img/movie.mp4" type="video/mp4">
+        <source src="img/movie.webm" type="video/webm">
+        <source src="img/movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video> 
+      <script>
+          const player = document.querySelector('.video-player');
+      </script>
+</body>
+</html>
